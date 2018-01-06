@@ -1,4 +1,7 @@
-# URL shortener
+# Header Parser Microservice
+
+_note: I sort of jumped around here a little bit; The microservice works and exactly follows the user stroies set forth in 
+[here](https://www.freecodecamp.org/challenges/request-header-parser-microservice)_
 
 First began by init a new node project. 
 
@@ -66,4 +69,15 @@ In an attempt to fill the user story outline in Request Header Parser Microservi
 OK....for now that's not bad...I am emitting an obj at my endpoint with the details needed for the user story.
 So now I need to construct a rudimentary page. So I have the C in MVC; not sure about the M and V.
 
-Probably do a quick tutorial to get that under control.
+## Final Thoughts
+
+OK, so the microservice is working exactly as the user stories indicate in the exercise.  I return an object with the ip address, language
+and os of the user; all neatly formatted.
+
+It was a good exercise as I had to create a route, use some logic and parse the headers etc.  
+
+There are several superfluos routes, /animals/ and /cars/, as I was gettig comforable with routes and express.Router()
+
+The actual micrservice is at /headers/headers.  Cleverly named, I know.
+
+So that's it.  I did a rudimentary index.html page that has nothing to do with the assignment. On to the next.
