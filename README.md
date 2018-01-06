@@ -1,6 +1,6 @@
 # Header Parser Microservice
 
-_note: I sort of jumped around here a little bit; The microservice works and exactly follows the user stroies set forth in 
+_note: I sort of jumped around here a little bit; The microservice works and exactly follows the user stories set forth in 
 [here](https://www.freecodecamp.org/challenges/request-header-parser-microservice)_
 
 First began by init a new node project. 
