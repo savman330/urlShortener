@@ -29,3 +29,5 @@ app.listen(port, () => {
     
 });
 ```
+
+Ok so I decided to an architcture where each route is it's own module; they are located in ```./app/routes```.
