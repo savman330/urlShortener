@@ -11,7 +11,14 @@ router.get('/fourlegs', (req, res) => {
 router.get('/twolegs', (req, res) => {
     console.log('being pinged at /animals/twolegs');
     //res.send('ostritich, human, cardinal');
-    res.send(`you are located at ${req.ip} address`);
+    // declare an object with the values I want populated:
+    // ip; lang; os
+    let obj = {
+      'ip': req.ip,
+      'language': req.headers['accept-language'],
+      'os': req.headers['user-agent'] 
+    };
+    res.send(obj);
 });
 
 module.exports = router;

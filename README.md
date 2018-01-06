@@ -31,3 +31,39 @@ app.listen(port, () => {
 ```
 
 Ok so I decided to an architcture where each route is it's own module; they are located in ```./app/routes```.
+
+ok so this was a good learning experience. 
+
+A general template will be as follows:
+
+```
+controllers/
+    index.js
+    route1.js
+    route2.js
+    ...
+    routeN.js
+tests
+server.js
+package.json
+```
+Thus my server.js file will only need to import my controller (index.js); it will contrain some home page routes, about page
+etc. but more importantly it will contain all the route1 through routeN.js modules.  
+
+
+getting a little tired here..... I have a good architechture using express.Router().
+
+It has been tested by pinging each enpoint at which I simply send a string to Postman.  
+
+In an attempt to fill the user story outline in Request Header Parser Microservice line item 4.) I have done the following:
+
+  * display users IP address - the IP address is a property of the req object; so, res.send(req.ip);
+  * OS of browser - req.headers object.... req.headers['user-agent'];
+  * language of user = req.headers['accept-language']
+  * now I can use some time of find() method and match of regex of say 'en-us' or whatever and dsiplay english
+  * thats for tomorrow
+  * 
+OK....for now that's not bad...I am emitting an obj at my endpoint with the details needed for the user story.
+So now I need to construct a rudimentary page. So I have the C in MVC; not sure about the M and V.
+
+Probably do a quick tutorial to get that under control.

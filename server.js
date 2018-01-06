@@ -1,16 +1,17 @@
 // server.js
 
 const   express = require("express"),
-        routes = require("./app/routes/routes.js");
+        controllers = require("./controllers");
         
 const bodyParser = require("body-parser");
 
 const app = express();
 
-const port = process.env.PORT
+const port = process.env.PORT;
 
-app.use('/', routes);
+app.use(controllers);
 
 app.listen(port, () => {
     console.log(`listening on port ${port}`);
+    //console.log('dirname:', __dirname);
 });
